@@ -44,8 +44,10 @@
                             <a class="nav-link dropdown-toggle btn btn-success" id="enlace_menu" href="#" 
                                 data-bs-toggle="dropdown">Iniciar Sesión</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"  href="./modal_registrarse.html">Registrarse</a></li>
-                                <li><a class="dropdown-item"  href="./modal_iniciar_sesion.html">Iniciar Sesión</a></li>
+                                <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal_registrarse">
+                                    Registrarse</button></li>
+                                <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal_iniciar_sesion">
+                                    Iniciar Sesión</button></li>
                             </ul>
                         </li>
                     </ul>
@@ -54,6 +56,145 @@
             </div>
         </div>
     </div>
+
+<!-- Modal iniciar sesión -->
+<div class="modal" id="myModal_iniciar_sesion">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--Encabezado de la ventana modal-->
+        <div class="modal-header">
+          <h4 class="modal-title; text-dark">INICIAR SESIÓN</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        
+        
+        <!--Cuerpo de la ventana modal-->
+        <div class="modal-body">
+          <div class="container mt-3 text-white">
+            <form action="./index.html" class="was-validated">
+                <!--Apartado de Nombre-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="Nombre de usuario" name="Nombre"
+                  required>
+                <div class="valid-feedback">Nombre valido</div>
+                <div class="invalid-feedback">Nombre no valido</div>
+              </div>
+              <!--Apartado de Contraseña-->
+              <div class="mb-3">
+                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Introduzca su contraseña"
+                  name="password" required>
+                <div class="valid-feedback">Contraseña valida</div>
+                <div class="invalid-feedback">Contraseña no valida</div>
+              </div>
+              <!--Apartado de Recordar Usuario-->
+              <div class="form-check mb-3; text-dark">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario.
+                </label>
+              </div>
+              <!--Boton Iniciar Sesion-->
+              <button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+
+            </form>
+          </div>
+        </div>
+        <!--Final Ventana Modal, boton cancelar-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Registrarse -->
+<div class="modal" id="myModal_registrarse">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!--Encabezado de la ventana modal-->
+        <div class="modal-header">
+          <h4 class="modal-title; text-dark">INICIAR SESIÓN</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!--Cuerpo de la ventana modal-->
+        <div class="modal-body">
+          <div class="container mt-3 text-white">
+            <form action="./index.html" class="was-validated">
+
+            <!--Nombre de usuario-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="Nombre de usuario" name="Nombre"
+                  required>
+                <div class="valid-feedback">Nombre valido</div>
+                <div class="invalid-feedback">Nombre no valido</div>
+              </div>
+
+            <!--Primer Apellido de usuario-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Primer Apellido</label>
+                <input type="text" class="form-control" id="uname" placeholder="Primer Apellido" name="Nombre"
+                  required>
+                <div class="valid-feedback">Apellido valido</div>
+                <div class="invalid-feedback">Apellido no valido</div>
+              </div>
+
+            <!--Segundo Apellido de usuario-->
+            <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Segundo Apellido</label>
+                <input type="text" class="form-control" id="uname" placeholder="Segundo Apellido" name="Nombre"
+                  required>
+                <div class="valid-feedback">Apellido valido</div>
+                <div class="invalid-feedback">Apellido no valido</div>
+              </div>
+
+            <!--Contraseña de usuario-->
+              <div class="mb-3">
+                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Introduzca su contraseña"
+                  name="password" required>
+                <div class="valid-feedback">Contraseña valida</div>
+                <div class="invalid-feedback">Contraseña no valida</div>
+              </div>
+
+              <!--Checkbox para validar edad minima-->
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                <label class="form-check-label" for="myCheck">Confirmo que tengo más de 16 años</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Debes confirmarlo para continuar</div>
+              </div>
+              
+              <!--Opción para recordad usuario-->
+              <div class="form-check mb-3; text-dark">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario.
+                </label>
+              </div>
+
+              <!--Boton registrarse-->
+              <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+          </div>
+        </div>
+        
+        <!--Final modal, boton cancelar-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 </body>
 
 </html>

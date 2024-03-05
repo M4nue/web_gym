@@ -13,111 +13,260 @@
 </head>
 
 <body>
+  <!--Encabezado y menu de la web-->
   <div id="main" class="fixed-top">
     <div id="header">
-        <div id="logo">
-            <div id="logo_text">
-                <!-- class="logo_colour", allows you to change the colour of the text -->
-                <img src="style/logo_selva.png" alt="logo_selva" width="140" height="140">
-                <h1><a href="index.html">La Selva <br> GYM</a></h1>
-            </div>
-
-            <div class="menu_propio navbar navbar-expand-sm">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-success" id="enlace_menu" href="#">Inicio</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-success" id="enlace_menu" href="#"
-                            data-bs-toggle="dropdown">Redes Sociales</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item"  href="https://www.instagram.com/laselvagym/" target="_blank">Instagram</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-success" id="enlace_menu" href="#">Contacto</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-success" id="enlace_menu" href="#" 
-                            data-bs-toggle="dropdown">Iniciar Sesión</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item"  href="./modal_registrarse.html">Registrarse</a></li>
-                            <li><a class="dropdown-item"  href="./modal_iniciar_sesion.html">Iniciar Sesión</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
+      <div id="logo">
+        <div id="logo_text">
+          <!--Logo y nombre del gimnasio-->
+          <img src="style/logo_selva.png" alt="logo_selva" width="140" height="140">
+          <h1><a href="index.html">La Selva <br> GYM</a></h1>
         </div>
-    </div>
-</div>
-    </div>  
-    <div id="content_header"></div>
-    <div id="site_content">
-      <!--<div id="banner"></div> -->
-	  <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <!-- insert your sidebar items here -->
-            <h3>Latest News</h3>
-            <h4>New Website Launched</h4>
-            <h5>February 1st, 2014</h5>
-            <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#">link 1</a></li>
-              <li><a href="#">link 2</a></li>
-              <li><a href="#">link 3</a></li>
-              <li><a href="#">link 4</a></li>
-            </ul>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" value="Enter keywords....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-              </p>
-            </form>
-          </div>
-          <div class="sidebar_base"></div>
+        <!--Menu encabezado-->
+        <div class="menu_propio navbar navbar-expand-sm">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn btn-success" id="enlace_menu" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle btn btn-success" id="enlace_menu" href="#"
+                data-bs-toggle="dropdown">Redes Sociales</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.instagram.com/laselvagym/" target="_blank">Instagram</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-success" id="enlace_menu" href="#">Contacto</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle btn btn-success" id="enlace_menu" href="#"
+                data-bs-toggle="dropdown">Iniciar Sesión</a>
+              <ul class="dropdown-menu">
+                <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal_registrarse">
+                    Registrarse</button></li>
+                <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal_iniciar_sesion">
+                    Iniciar Sesión</button></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Welcome to the simplestyle_purple template</h1>
-        <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>), which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...</p>
-        <p>This template is written entirely in <strong>HTML5</strong> and <strong>CSS</strong>, and can be validated using the links in the footer.</p>
-        <p>You can view more free HTML5 web templates <a href="http://www.html5webtemplates.co.uk">here</a>.</p>
-        <p>This template is a fully functional 5 page website, with an <a href="examples.html">examples</a> page that gives examples of all the styles available with this design.</p>
-        <h2>Browser Compatibility</h2>
-        <p>This template has been tested in the following browsers:</p>
-        <ul>
-          <li>Internet Explorer 9</li>
-          <li>FireFox 25</li>
-          <li>Google Chrome 31</li>
-        </ul>
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
-      <p>Copyright &copy; simplestyle_purple | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Website templates</a></p>
     </div>
   </div>
+
+  <!-- Modal iniciar sesión -->
+  <div class="modal" id="myModal_iniciar_sesion">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--Encabezado de la ventana modal-->
+        <div class="modal-header">
+          <h4 class="modal-title; text-dark">INICIAR SESIÓN</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+
+        <!--Cuerpo de la ventana modal-->
+        <div class="modal-body">
+          <div class="container mt-3 text-white">
+            <form action="./index.html" class="was-validated">
+              <!--Apartado de Nombre-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="Nombre de usuario" name="Nombre"
+                  required>
+                <div class="valid-feedback">Nombre valido</div>
+                <div class="invalid-feedback">Nombre no valido</div>
+              </div>
+              <!--Apartado de Contraseña-->
+              <div class="mb-3">
+                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Introduzca su contraseña"
+                  name="password" required>
+                <div class="valid-feedback">Contraseña valida</div>
+                <div class="invalid-feedback">Contraseña no valida</div>
+              </div>
+              <!--Apartado de Recordar Usuario-->
+              <div class="form-check mb-3; text-dark">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario.
+                </label>
+              </div>
+              <!--Boton Iniciar Sesion-->
+              <button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+
+            </form>
+          </div>
+        </div>
+        <!--Final Ventana Modal, boton cancelar-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Registrarse -->
+  <div class="modal" id="myModal_registrarse">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!--Encabezado de la ventana modal-->
+        <div class="modal-header">
+          <h4 class="modal-title; text-dark">INICIAR SESIÓN</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!--Cuerpo de la ventana modal-->
+        <div class="modal-body">
+          <div class="container mt-3 text-white">
+            <form action="./index.html" class="was-validated">
+
+              <!--Nombre de usuario-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="Nombre de usuario" name="Nombre"
+                  required>
+                <div class="valid-feedback">Nombre valido</div>
+                <div class="invalid-feedback">Nombre no valido</div>
+              </div>
+
+              <!--Primer Apellido de usuario-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Primer Apellido</label>
+                <input type="text" class="form-control" id="uname" placeholder="Primer Apellido" name="Nombre" required>
+                <div class="valid-feedback">Apellido valido</div>
+                <div class="invalid-feedback">Apellido no valido</div>
+              </div>
+
+              <!--Segundo Apellido de usuario-->
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label; text-dark">Segundo Apellido</label>
+                <input type="text" class="form-control" id="uname" placeholder="Segundo Apellido" name="Nombre"
+                  required>
+                <div class="valid-feedback">Apellido valido</div>
+                <div class="invalid-feedback">Apellido no valido</div>
+              </div>
+
+              <!--Contraseña de usuario-->
+              <div class="mb-3">
+                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Introduzca su contraseña"
+                  name="password" required>
+                <div class="valid-feedback">Contraseña valida</div>
+                <div class="invalid-feedback">Contraseña no valida</div>
+              </div>
+
+              <!--Checkbox para validar edad minima-->
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                <label class="form-check-label" for="myCheck">Confirmo que tengo más de 16 años</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Debes confirmarlo para continuar</div>
+              </div>
+
+              <!--Opción para recordad usuario-->
+              <div class="form-check mb-3; text-dark">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario.
+                </label>
+              </div>
+
+              <!--Boton registrarse-->
+              <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+          </div>
+        </div>
+
+        <!--Final modal, boton cancelar-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div id="content_header"></div>
+  <div id="site_content">
+    <!--<div id="banner"></div> -->
+    <div id="sidebar_container">
+      <div class="sidebar">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+          <!-- insert your sidebar items here -->
+          <h3>Latest News</h3>
+          <h4>New Website Launched</h4>
+          <h5>February 1st, 2014</h5>
+          <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a
+              href="#">Read more</a></p>
+        </div>
+        <div class="sidebar_base"></div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+            <li><a href="#">link 4</a></li>
+          </ul>
+        </div>
+        <div class="sidebar_base"></div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+          <h3>Search</h3>
+          <form method="post" action="#" id="search_form">
+            <p>
+              <input class="search" type="text" name="search_field" value="Enter keywords....." />
+              <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+                alt="Search" title="Search" />
+            </p>
+          </form>
+        </div>
+        <div class="sidebar_base"></div>
+      </div>
+    </div>
+    <div id="content">
+      <!-- insert the page content here -->
+      <h1>Welcome to the simplestyle_purple template</h1>
+      <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under a
+        <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>), which means
+        that you are free to download and use it for anything you want (including modifying and amending it). All I ask
+        is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than
+        that...</p>
+      <p>This template is written entirely in <strong>HTML5</strong> and <strong>CSS</strong>, and can be validated
+        using the links in the footer.</p>
+      <p>You can view more free HTML5 web templates <a href="http://www.html5webtemplates.co.uk">here</a>.</p>
+      <p>This template is a fully functional 5 page website, with an <a href="examples.html">examples</a> page that
+        gives examples of all the styles available with this design.</p>
+      <h2>Browser Compatibility</h2>
+      <p>This template has been tested in the following browsers:</p>
+      <ul>
+        <li>Internet Explorer 9</li>
+        <li>FireFox 25</li>
+        <li>Google Chrome 31</li>
+      </ul>
+    </div>
+  </div>
+  <div id="content_footer"></div>
+  <div id="footer">
+    <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a
+        href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
+    <p>Copyright &copy; simplestyle_purple | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+        href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+        href="http://www.html5webtemplates.co.uk">Website templates</a></p>
+  </div>
+  </div>
 </body>
+
 </html>
