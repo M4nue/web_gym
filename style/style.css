@@ -50,7 +50,7 @@ h5, h6
 a, a:hover
 { outline: none;
   text-decoration: underline;
-  color: #009FBC;}
+  color: #ffffff;}
 
 a:hover
 { text-decoration: none;}
@@ -332,3 +332,23 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+
+
+
+
+
+/* estilos propios */
+
+.menu_propio {
+    margin-right: 10%;
+}
+
+
+#enlace_menu {
+    color: #ffffff !important; /* Aseguramos que el color del texto sea blanco */
+}
+
+/* Ajustes para los enlaces dentro del menú desplegable */
+.dropdown-menu .dropdown-item {
+    color: #000000; /* Color del texto para los enlaces del menú desplegable */
+}
