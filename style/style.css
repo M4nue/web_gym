@@ -186,7 +186,7 @@ ul#menu li a:hover
   background: #A21FA2;}
 
 #site_content
-{ width: 880px;
+{ width: 80%;
   overflow: hidden;
   margin: 20px auto 0 auto;
   padding: 0 0 10px 0;} 
@@ -207,8 +207,8 @@ ul#menu li a:hover
 
 .sidebar
 { float: right;
-  width: 222px;
-  padding: 0;
+  width: 300px;
+  padding: 10% 4em;
   margin: 0 0 16px 0;}
 
 .sidebar_item
@@ -223,9 +223,9 @@ ul#menu li a:hover
 { margin: 0;} 
 
 #content
-{ text-align: left;
-  width: 620px;
-  padding: 0 0 0 5px;
+{ text-align: center;
+  width: 800px;
+  padding: 10% 4em;
   float: left;}
   
 #content ul
@@ -233,7 +233,6 @@ ul#menu li a:hover
 
 #content ul li, .sidebar ul li
 { list-style-type: none;
-  background: url(bullet.png) no-repeat;
   margin: 0 0 0 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
