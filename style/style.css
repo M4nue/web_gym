@@ -351,3 +351,14 @@ table tr td
 .dropdown-menu .dropdown-item {
     color: #000000; /* Color del texto para los enlaces del menú desplegable */
 }
+
+.fachada_gym {
+  width: 100%;
+  height: 100%;
+}
+
+
+.parte_derecha_home{
+
+  gap: 10%;
+}
