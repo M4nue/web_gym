@@ -11,3 +11,10 @@ If you have any questions please feel free to e-mail me at contact@html5webtempl
 Best regards,
 
 HTML5WebTemplates.co.uk
+
+*******************************************************************************************************************************
+
+Esta es la web de un gimnasio local, desarrollanda con HTML CSS y BOOSTRAP
+Los archivos dentro de simplestyle_purple son todos los necesarios con los que se desarrollo la plantilla base
+El resto de archivos fuera de esta carpeta son propios y necesario para la web diseñada a partir de esta
+
