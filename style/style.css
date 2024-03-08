@@ -343,8 +343,8 @@ table tr td
 }
 
 
-#enlace_menu {
-    color: #ffffff !important; /* Aseguramos que el color del texto sea blanco */
+.nav-link.btn.btn-success {
+  color: #ffffff; /* Texto en blanco */
 }
 
 /* Ajustes para los enlaces dentro del menú desplegable */
