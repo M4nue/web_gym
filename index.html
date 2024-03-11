@@ -19,11 +19,11 @@
       <div id="logo">
         <div id="logo_text">
           <!--Logo y nombre del gimnasio-->
-          <img src="style/logo_selva.png" alt="logo_selva" width="140" height="140">
+          <img src="style/logo_selva.png" alt="logo_selva" id="imagen_logo_menu">
           <h1><a href="index.html">La Selva <br> GYM</a></h1>
         </div>
         <!--Menu encabezado-->
-        <div class="menu_propio navbar navbar-expand-sm">
+        <div class="menu_propio navbar navbar-expand-sm" id="lista_desordenada_menu">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link btn btn-success" href="index.html">Inicio</a>
@@ -39,6 +39,14 @@
 
             <li class="nav-item">
               <a class="nav-link btn btn-success" href="contact.html">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-success" href="local.html">Local</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-success" href="conocenos.html">Conocenos</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -73,7 +81,7 @@
             <form action="./index.html" class="was-validated">
               <!--Apartado de Nombre-->
               <div class="mb-3 mt-3">
-                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <label class="form-label; text-dark">Nombre</label>
                 <input type="text" class="form-control"  placeholder="Nombre de usuario" name="Nombre"
                   required>
                 <div class="valid-feedback">Nombre valido</div>
@@ -81,7 +89,7 @@
               </div>
               <!--Apartado de Contraseña-->
               <div class="mb-3">
-                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <label class="form-label; text-dark">Contraseña</label>
                 <input type="password" class="form-control"  placeholder="Introduzca su contraseña"
                   name="password" required>
                 <div class="valid-feedback">Contraseña valida</div>
@@ -126,7 +134,7 @@
 
               <!--Nombre de usuario-->
               <div class="mb-3 mt-3">
-                <label for="uname" class="form-label; text-dark">Nombre</label>
+                <label class="form-label; text-dark">Nombre</label>
                 <input type="text" class="form-control" placeholder="Nombre de usuario" name="Nombre"
                   required>
                 <div class="valid-feedback">Nombre valido</div>
@@ -135,7 +143,7 @@
 
               <!--Primer Apellido de usuario-->
               <div class="mb-3 mt-3">
-                <label for="uname" class="form-label; text-dark">Primer Apellido</label>
+                <label class="form-label; text-dark">Primer Apellido</label>
                 <input type="text" class="form-control"  placeholder="Primer Apellido" name="Nombre" required>
                 <div class="valid-feedback">Apellido valido</div>
                 <div class="invalid-feedback">Apellido no valido</div>
@@ -143,7 +151,7 @@
 
               <!--Segundo Apellido de usuario-->
               <div class="mb-3 mt-3">
-                <label for="uname" class="form-label; text-dark">Segundo Apellido</label>
+                <label class="form-label; text-dark">Segundo Apellido</label>
                 <input type="text" class="form-control"  placeholder="Segundo Apellido" name="Nombre"
                   required>
                 <div class="valid-feedback">Apellido valido</div>
@@ -152,7 +160,7 @@
 
               <!--Contraseña de usuario-->
               <div class="mb-3">
-                <label for="password" class="form-label; text-dark">Contraseña</label>
+                <label class="form-label; text-dark">Contraseña</label>
                 <input type="password" class="form-control" placeholder="Introduzca su contraseña"
                   name="password" required>
                 <div class="valid-feedback">Contraseña valida</div>
@@ -187,12 +195,9 @@
       </div>
     </div>
   </div>
-  <!--Fin MENU y -->
+  <!--Fin MENU -->
 
 
-
-  <!--<div id="site_content">-->
-  <!--<div id="banner"></div> -->
   <div class="parte_derecha_home">
     <div class="sidebar">
       <div class="sidebar_top"></div>
@@ -218,20 +223,6 @@
       </div>
       <div class="sidebar_base"></div>
     </div>
-    <div class="sidebar">
-      <div class="sidebar_top"></div>
-      <div class="sidebar_item">
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords.....">
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
-              alt="Search" title="Search">
-          </p>
-        </form>
-      </div>
-      <div class="sidebar_base"></div>
-    </div>
   </div>
   <div id="content">
     <!-- insert the page content here -->
@@ -245,6 +236,9 @@
     <img src="./style/fachada_gym.jpeg" alt="fachada_gym" class="fachada_gym">
   </div>
 
+  <footer>
+    <a href="https://www.instagram.com/laselvagym/"><img src="style/instagram.png" alt="enlace_instagram"></a>
+  </footer>
 
 </body>
 
