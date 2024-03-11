@@ -62,11 +62,11 @@ blockquote
   background: #FFF;}
 
 ul
-{ margin: 2px 0 22px 17px;}
+{ margin: 2px 0 22px 17px;
+  list-style: none;}
 
 ul li
-{ list-style-type: circle;
-  margin: 0 0 6px 0; 
+{ margin: 0 0 6px 0; 
   padding: 0 0 4px 5px;
   line-height: 1.5em;}
 
@@ -91,7 +91,7 @@ ol li
   text-align: center;
   margin: 20px auto;}
 
-#main, #logo, #menubar, #site_content, #footer
+#main, #logo, #menubar, #site_content
 { margin-left: auto; 
   margin-right: auto;}
 
@@ -237,29 +237,6 @@ ul#menu li a:hover
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
 
-#footer
-{ width: 100%;
-  font-family: 'trebuchet ms', sans-serif;
-  font-size: 100%;
-  height: 80px;
-  padding: 28px 0 5px 0;
-  text-align: center; 
-  background: #DFABF5;
-  border-top: 2px solid #A21FA2;
-  color: #FFF;}
-
-#footer p
-{ line-height: 1.7em;
-  padding: 0 0 10px 0;}
-
-#footer a
-{ color: #A21FA2;
-  text-decoration: none;}
-
-#footer a:hover
-{ color: #FFF;
-  text-decoration: none;}
-
 .search
 { color: #5D5D5D; 
   border: 1px solid #BBB; 
@@ -344,7 +321,7 @@ table tr td
 
 
 .nav-link.btn.btn-success {
-  color: #ffffff; /* Texto en blanco */
+  color: #ffffff; /* Texto en blanco botones menu */
 }
 
 /* Ajustes para los enlaces dentro del menú desplegable */
@@ -359,6 +336,29 @@ table tr td
 
 
 .parte_derecha_home{
-
   gap: 10%;
+}
+
+#imagen_logo_menu{
+  width: 35%;
+  height: 85%;
+}
+
+#lista_desordenada_menu{
+  list-style: none;
+}
+
+footer {
+  position: fixed;
+  border-top: 5px solid #c3ffa8;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+footer a img{
+  width: 2%;
 }
