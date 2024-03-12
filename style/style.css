@@ -224,7 +224,7 @@ ul#menu li a:hover
 
 #content
 { text-align: center;
-  width: 800px;
+  width: 50%;
   padding: 10% 4em;
   float: left;}
   
@@ -245,7 +245,7 @@ ul#menu li a:hover
   font: 100% arial, sans-serif;}
 
 .form_settings
-{ margin: 15px 0 0 0;}
+{ margin: 3% 0 0 10%;}
 
 .form_settings p
 { padding: 0 0 4px 0;}
@@ -361,4 +361,20 @@ footer {
 
 footer a img{
   width: 2%;
+}
+
+
+#formulario_2{
+  text-align: center;
+  width: 50%;
+  padding: 10% 4em;
+  float: inline-end;}
+
+#radio1{
+  width: 2%;
+  height: 2%;
+}
+#radio2{
+  width: 2%;
+  height: 2%;
 }
