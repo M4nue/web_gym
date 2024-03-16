@@ -227,6 +227,12 @@ ul#menu li a:hover
   width: 50%;
   padding: 10% 4em;
   float: left;}
+
+#content2{
+  text-align: center;
+  width: 50%;
+  padding: 10% 4em;
+  float: left;}
   
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -363,12 +369,14 @@ footer a img{
   width: 2%;
 }
 
-
-#formulario_2{
+#formulario{
   text-align: center;
-  width: 50%;
+  width: 100%;
   padding: 10% 4em;
-  float: inline-end;}
+  float: inline-end;
+}
+
+
 
 #radio1{
   width: 2%;

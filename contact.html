@@ -78,7 +78,7 @@
         <!--Cuerpo de la ventana modal-->
         <div class="modal-body">
           <div class="container mt-3 text-white">
-            <form action="./index.html" class="was-validated">
+            <form action="http://172.22.200.240/resultado.php" method="post" class="was-validated">
               <!--Apartado de Nombre-->
               <div class="mb-3 mt-3">
                 <label class="form-label; text-dark">Nombre</label>
@@ -130,7 +130,7 @@
         <!--Cuerpo de la ventana modal-->
         <div class="modal-body">
           <div class="container mt-3 text-white">
-            <form action="./index.html" class="was-validated">
+            <form action="http://172.22.200.240/resultado.php" method="post" class="was-validated">
 
               <!--Nombre de usuario-->
               <div class="mb-3 mt-3">
@@ -197,66 +197,42 @@
   </div>
   <!--Fin MENU -->
   
-      <section id="content">
-        <h1>Contactanos</h1>
-        <p>Contactanos a traves de este formulario o nuestra cuenta de instagram</p>       
-          <div class="form_settings">
-            <p><span>Nombre</span><input class="contact" type="text" name="your_name" value=""></p>
-            <p><span>Dirección de correo</span><input class="contact" type="text" name="your_email" value=""></p>
-            <p><span>¿En que te podemos ayudar?</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
-            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit"></p>
-          </div>       
-        <p><br><br>NOTA: Reciviras las respuestas en el correo electronico proporcionado</p>
-      </section>
-
-      <section id="formulario_2">
-        <h1>DATOS</h1>
-        <p>Realiza este formulario para saber tu estado actual</p>
-        <div class="form_settings">
-          <p>
-            <span>Objetivo</span>
-            <label>
-              <select class="form-select form-select-lg" inputmode="text">
-                <option>Perder grasa</option>
-                <option>Ganar musculo</option>
-                <option>Mejorar fuerza</option>
-                <option>Ganar resistencia</option>
-              </select>
-          </label>
-          </p>
-      
-          <p><span>Peso</span>
-            <label>
-              <select class="form-select form-select-lg" inputmode="text">
-                <option>Menor de 60Kg</option>
-                <option>Menor de 70K</option>
-                <option>Mayor de 80K</option>
-                <option>Mayor de 90K</option>
-              </select>
-            </label>
-        </p>
-      
-          <p><span>Altura</span>
-            <label>
-              <select class="form-select form-select-lg" inputmode="text">
-                <option>Menor de 1.50cm</option>
-                <option>Menor de 1.60cm</option>
-                <option>Mayor de 1.75cm</option>
-                <option>Mayor de 1.85cm</option>
-              </select>
-            </label>
-          </p>
+      <section id="section">
+        <form action="http://172.22.200.240/resultado.php" method="post" id="formulario" target="_blank">
+          <h1>Contactanos</h1>
+          <p>Contactanos a traves de este formulario o nuestra cuenta de instagram</p>       
           
-          <p>
-            <span>¿Alguna dificultad?</span>
-            <input type="radio" id="radio1" class="form-check-input" name="dificultad" value="valor1">SI
-            <input type="radio" id="radio2" class="form-check-input" name="dificultad" value="valor2" checked>NO
-          </p>
-          
+          <label class=form-label for="nombre">Escriba su nombre</label>
+          <input class="etiquetas_inputs" type="text" id="nombre" name="nombre"><br><br> 
 
-          <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit"></p>
-        </div>       
-        <p><br><br>NOTA: Reciviras las respuestas en el correo electronico proporcionado</p>
+          <label for="correo">Correo electronico</label>
+          <input type="email" id="correo" name="correo"><br><br> 
+
+          <label for="Objetivo">Objetivo</label>
+            <select>
+            <option>Perder grasa</option>
+            <option>Ganar musculo</option>
+            <option>Mejorar fuerza</option>
+            <option>Ganar resistencia</option>
+            </select><br> <br> 
+
+          <label for="peso">Peso actual</label>
+          <input type="number" id="peso" name="peso"><br><br>
+
+          <label for="altura">Altura actual</label>
+          <input type="number" id="altura" name="altura"><br><br>
+
+          <label for="dificultades">¿Dificultad Física?</label>
+          <input type="radio" name="dificultades" value="si">Si
+          <input type="radio" name="dificultades" value="no">No<br><br>
+
+          <label for="ayuda">En que más te podemos ayudar</label><br> 
+          <textarea rows="8" cols="50" id="ayuda" name="ayuda"></textarea><br>
+
+          <button type="submit" class="btn btn-success">Enviar</button>
+          
+          <p><br><br>NOTA: Reciviras las respuestas en el correo electronico proporcionado</p>
+        </form>
       </section>
       
 
