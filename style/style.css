@@ -386,3 +386,7 @@ footer a img{
   width: 2%;
   height: 2%;
 }
+.fotoscarrousel {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Mantén la proporción de aspecto */
+}
