@@ -400,3 +400,7 @@ footer a img{
 #tr_tabla{
   row-gap: 10%;
 }
+.maps_width{
+  width: 100%; 
+  height: 400px;
+}
