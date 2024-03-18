@@ -301,19 +301,17 @@ ul#menu li a:hover
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
   
-table
-{ margin: 10px 0 30px 0;}
+table tbody{
+    text-align:center;
+    border-collapse:collapse;
+    caption-side: bottom;
+    background: #c3ffa8;
+  }
 
-table tr th, table tr td
-{ background: #A21FA2;
-  color: #FFF;
-  padding: 7px 4px;
-  text-align: left;}
-  
-table tr td
-{ background: #E5E5DB;
-  color: #47433F;
-  border-top: 1px solid #FFF;}
+
+table tbody tr td{
+  border: 5px solid #000000;
+} 
 
 
 
@@ -386,7 +384,19 @@ footer a img{
   width: 2%;
   height: 2%;
 }
+#content2
+{ text-align: center;
+  width: 100%;
+}
 .fotoscarrousel {
-  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al 100% del contenedor */
-  height: auto; /* Mantén la proporción de aspecto */
+  width: 50%; 
+  height: auto;
+}
+.imagen_tabla{
+  width: 70%;
+  height: 70;
+}
+
+#tr_tabla{
+  row-gap: 10%;
 }
