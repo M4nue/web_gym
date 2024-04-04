@@ -199,17 +199,18 @@
   
       <section>
         <form action="http://172.22.200.240/resultado.php" method="post" id="formulario" target="_blank">
-          <h1>Contactanos</h1>
+          <h2>Contactanos</h2>
           <p>Contactanos a traves de este formulario o nuestra cuenta de instagram</p>       
           
-          <label class=form-label for="nombre">Escriba su nombre</label>
-          <input class="etiquetas_inputs" type="text" id="nombre" name="nombre"><br><br> 
+          <label for="nombre" class="form-label">Escriba su nombre</label>
+          <input type="text" placeholder="Nombre de usuario" name="Nombre" id="nombre"
+                  required><br><br> 
 
-          <label for="correo">Correo electronico</label>
-          <input type="email" id="correo" name="correo"><br><br> 
+          <label for="correo" class="form-label">Correo electronico</label>
+          <input type="email" id="correo" name="correo" placeholder="Correo de contacto"><br><br> 
 
           <label for="Objetivo">Objetivo</label>
-            <select>
+            <select id="Objetivo">
             <option>Perder grasa</option>
             <option>Ganar musculo</option>
             <option>Mejorar fuerza</option>
@@ -222,9 +223,9 @@
           <label for="altura">Altura actual</label>
           <input type="number" id="altura" name="altura"><br><br>
 
-          <label for="dificultades">¿Dificultad Física?</label>
-          <input type="radio" name="dificultades" value="si">Si
-          <input type="radio" name="dificultades" value="no">No<br><br>
+          <label for="dificultades_si">¿Dificultad Física?</label>
+          <input type="radio" name="dificultades" value="si" id="dificultades_si">Si
+          <input type="radio" name="dificultades" value="no" id="dificultades_no">No<br><br>          
 
           <label for="ayuda">En que más te podemos ayudar</label><br> 
           <textarea rows="8" cols="50" id="ayuda" name="ayuda"></textarea><br>
